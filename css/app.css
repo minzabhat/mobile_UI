@@ -50,3 +50,51 @@
     line-height: 1;
     text-align: center;
 }
+/*category page*/
+.category_card{
+  margin:0px !important;
+}
+.category_card > .card-footer{
+  position: static;
+  display:block;
+  text-transform: capitalize;
+}
+.category_card >.card-footer>.name_container{
+  display: flex;
+}
+.name_container> h3{
+  margin: 0px;
+  font-size:13px;
+  font-family: "Open Sans",sans-serif !important;
+  color:#151414;
+  width: 85%;
+}
+.price-container span{
+  font-family: "Open Sans",sans-serif !important;
+}
+.price-container .price{
+  font-weight: bold;
+  margin-right:5px;
+  color:#151414;
+  font-size:12px;
+}
+.price-container strike{
+  margin-right: 5px;
+  font-size: 11px;
+}
+.price-container .discount{
+  font-size: 11px;
+  color: red;
+}
+.name_container >a> .wishlist_icon {
+  color: #151414 !important;
+  display: inline-block;
+  position: absolute;
+  bottom: 43px;
+  right: 4px;
+  top: 1px;
+  font-size: 18px;
+}
+.md .card-footer a.link, .md .card-header a.link{
+  height: auto;
+}
