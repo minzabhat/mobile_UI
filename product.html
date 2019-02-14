@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#151414">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>KB</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="catalog/view/theme/kashmirbox_1_5/css/custom.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div class="page" data-name="category">
+          <!-- Top Navbar -->
+          <div class="navbar top_nav">
+           <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only" data-panel="left">
+                <i class="icon icon-back"></i>
+              </a>
+            </div>
+            <div class="title sliding">KB</div>
+            <div class="right">
+               <a href="#" class="link icon-only " data-panel="right">
+             
+              </a>
+              <a href="#" class="link icon-only material:favorite " data-panel="right">
+              
+               <i class="f7-icons">heart_fill</i>
+              </a>
+              <a href="#" class="link icon-only material:favorite " data-panel="right">
+                <i class="icon material-icons">shopping_cart</i> 
+              </a>
+            </div>
+           </div>
+          </div>
+          <!-- Subnavbar -->
+          <div class="subnavbar second_nav">
+            <div class="subnavbar-inner">
+            <!-- Subnavbar content, for example tabs buttons -->
+              <div class="block product_block">
+                <p>sale ends in</p>
+                <p>
+                  <span>10</span>hrs:
+                  <span>35</span>min:
+                  <span>07</span>sec
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <!-- Each "cell" has col-[width in percents] class -->
+            <div class="row no-gap product_image">
+              <div class="col-100">
+                <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                    </div>
+                    <div class="swiper-slide"><img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                    </div>
+                  </div>
+                </div>
+                <div class="chip chip-outline view_similar">
+                  <div class="chip-label">view similar</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="block">
+                
+              </div>
+            </div>
+          </div>     
+          <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
+            <div class="toolbar-inner sort_filter_icons">
+              <a href="#tab-1" class="tab-link tab-link-active">
+                <div class="f7-demo-icon-cell">
+                  <div class="f7-demo-icon">
+                    <i class="f7-icons">sort</i>
+                  </div>
+                  <div class="f7-demo-icon-label">sort</div>
+                </div>
+              </a>
+              <a href="#tab-2" class="tab-link tab-link-active">
+                <div class="f7-demo-icon-cell">
+                  <div class="f7-demo-icon">
+                    <i class="f7-icons">filter</i>
+                  </div>
+                  <div class="f7-demo-icon-label">filter</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
